@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #FFFBE8;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* 네비게이션 */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+nav a {
+  text-decoration: none;
+  color: #FF5507;
+}
+
+nav a:hover,
+nav a.active {
+  font-weight: bold;
+}
+
+.line {
+  height: 2px;
+  background: #FC5C00;
+  width: 100%;
+  margin: 1rem 0 2rem;
+}
+
+.line {
+  margin-bottom: 60px;
+}
+
+/*여기가 공통으로 상단 바 부분*/
+
+/* 콘텐츠 */
+.work-text-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px; /* 상단에서 250px 떨어지게 */
+}
+
+.work-text-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.renders-wrapper {
+  position: absolute;
+  bottom: -1500px;            /* 하단에서 150px 위 */
+  left: 50%;
+  transform: translateX(-50%); /* 가로 중앙 정렬 */
+}
+
+.renders-img {
+  width: 1050px;        /* 필요시 width: 80%; 또는 */max-width: 200%     
+  height: auto;
+}
+/* ✅ 추가: 전체화면 모달용 CSS */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
