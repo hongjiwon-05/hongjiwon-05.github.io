@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Works - 홍지원 포트폴리오</title>
+  <link rel="stylesheet" href="works.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <!-- 네비게이션 -->
+    <nav>
+      <a href="Portfolio.html">Home</a>
+      <a href="works.html" class="active">Works</a>
+      <a href="about.html">About</a>
+    </nav>
+     <div class="line"></div>
+
+<!-- 클릭 가능한 텍스트 이미지 -->
+<div class="work-text-wrapper">
+  <img src="images/work_text_all.png" alt="워크 텍스트" class="work-text-img" onclick="openFullscreen()" />
+</div>
+
+<!-- 모달 구조 -->
+<div id="fullscreenModal" class="modal" onclick="closeFullscreen()">
+  <img src="images/render1.png" alt="Render Fullscreen" class="modal-img" />
+</div>
+
+
+
+
+<div class="renders-wrapper">
+  <img src="images/renders.png" alt="렌더 이미지" class="renders-img" />
+</div>
+</section>
+<script>
+  function openFullscreen() {
+    const modal = document.getElementById('fullscreenModal');
+    modal.style.display = 'flex';
+  }
+
+  function closeFullscreen() {
+    const modal = document.getElementById('fullscreenModal');
+    modal.style.display = 'none';
+  }
+</script>
+</body>
+</html>
