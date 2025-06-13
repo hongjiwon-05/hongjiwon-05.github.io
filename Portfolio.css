@@ -1,0 +1,180 @@
+/* 기본 설정 */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #FFFBE8;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 네비게이션 바 */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;  /* ⬅ 추가: 상단에서 내려오는 여백 */
+}
+
+nav a {
+  text-decoration: none;
+  color: #FF5507;
+}
+
+nav a:hover,
+nav a.active {
+  font-weight: bold;
+}
+
+/* 상단 라인 */
+.line-top {
+  width: 100%;
+  height: 1px;
+  background: #FC5C00;
+  margin: 1rem 0 2rem;
+}
+
+/* 배경 블러 이미지 */
+/* CSS */
+.biur1 {
+  position: absolute;  /* fixed → absolute로 수정 */
+  width: 900px;
+  height: 900px;
+  left: -80px;
+  top: -10px;
+  z-index: 0;           /* -1이 보이지 않으면 0 이상으로 */
+  pointer-events: none;
+  opacity: 1;
+}
+
+
+
+/* Hero 영역 */
+.hero {
+  position: relative;
+  height: 800px;
+}
+
+.title-wrapper {
+  position: absolute;
+  top: 90px;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.portfolio-img {
+  width: 600px;
+  height: auto;
+}
+
+/* 텍스트 설명 이미지 */
+.text-info-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -20rem;
+  padding: 0 2rem;
+}
+
+.text-info-img {
+  width: 200%;
+  max-width: 1060px;
+  height: auto;
+}
+
+/* 디자인 타이틀 */
+.design-title-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 15rem 0;
+}
+
+.design-title-wrapper a {
+  text-decoration: none;
+}
+
+.design-title-img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.design-title-img:hover {
+  transform: scale(1.05);
+}
+
+/* works section */
+#works {
+  padding: 4rem 2rem;
+}
+
+/* 그룹7 이미지 */
+.group7-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0 140px; /* 상단 60px, 하단 140px */
+}
+
+.group7-img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* 그룹 텍스트8 + 도트 */
+.group-layer-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 630px;
+  margin-bottom: 20px;
+}
+
+.group-text8 {
+  position: absolute;
+  bottom: 910.6px;
+  left: 50%;
+  transform: translateX(-52.4%);
+  max-width: 55%;
+  height: auto;
+}
+
+/* 도트 이미지 */
+.elipse8 {
+  position: absolute;
+  bottom: 826px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: auto;
+  z-index: 10;
+}
+
+
+
+
+
+
+.bottom-line-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -720px; /* 🎯 여기를 조정해서 상단으로 당기기 */
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.bottom-line-img {
+  width: 1050px;
+  height: auto;
+  display: block;
+}
